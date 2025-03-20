@@ -1,0 +1,63 @@
+.block {
+  position: absolute;
+  user-select: none;
+}
+
+.resize-handle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  opacity: 0;
+}
+
+.block:hover .resize-handle {
+  opacity: 1;
+  background: white;
+  border-radius: 50%;
+}
+
+.top-left {
+  top: -5px;
+  left: -5px;
+  cursor: nwse-resize;
+}
+.top {
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: ns-resize;
+}
+.top-right {
+  top: -5px;
+  right: -5px;
+  cursor: nesw-resize;
+}
+.right {
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+  cursor: ew-resize;
+}
+.bottom-right {
+  bottom: -5px;
+  right: -5px;
+  cursor: nwse-resize;
+}
+.bottom {
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: ns-resize;
+}
+.bottom-left {
+  bottom: -5px;
+  left: -5px;
+  cursor: nesw-resize;
+}
+.left {
+  top: 50%;
+  left: -5px;
+  transform: translateY(-50%);
+  cursor: ew-resize;
+}
